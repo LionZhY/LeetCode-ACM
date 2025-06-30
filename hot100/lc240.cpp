@@ -1,5 +1,4 @@
 #include <iostream>
-#include <ratio>
 #include <vector>
 
 using namespace std;
