@@ -28,12 +28,14 @@ int dfs (TreeNode* node, int& maxDiameter)
 
 int main()
 {
-    // 构建如下二叉树：
-    //           1
-    //         /   \
-    //        2     3
-    //       / \     
-    //      4   5     
+    /* 构建如下二叉树：  
+          1
+        /   \
+       2     3
+      / \     
+     4   5     
+    */ 
+    
 
     TreeNode* root = new TreeNode(1);
     root->left = new TreeNode(2);
