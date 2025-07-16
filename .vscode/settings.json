@@ -1,53 +1,14 @@
 {
-    "files.associations": {
-        "array": "cpp",
-        "atomic": "cpp",
-        "bit": "cpp",
-        "cctype": "cpp",
-        "charconv": "cpp",
-        "clocale": "cpp",
-        "cmath": "cpp",
-        "compare": "cpp",
-        "concepts": "cpp",
-        "cstddef": "cpp",
-        "cstdint": "cpp",
-        "cstdio": "cpp",
-        "cstdlib": "cpp",
-        "ctime": "cpp",
-        "cwchar": "cpp",
-        "cwctype": "cpp",
-        "deque": "cpp",
-        "string": "cpp",
-        "unordered_map": "cpp",
-        "vector": "cpp",
-        "exception": "cpp",
-        "algorithm": "cpp",
-        "functional": "cpp",
-        "iterator": "cpp",
-        "memory": "cpp",
-        "memory_resource": "cpp",
-        "numeric": "cpp",
-        "optional": "cpp",
-        "random": "cpp",
-        "string_view": "cpp",
-        "system_error": "cpp",
-        "tuple": "cpp",
-        "type_traits": "cpp",
-        "utility": "cpp",
-        "format": "cpp",
-        "initializer_list": "cpp",
-        "iosfwd": "cpp",
-        "iostream": "cpp",
-        "istream": "cpp",
-        "limits": "cpp",
-        "new": "cpp",
-        "numbers": "cpp",
-        "ostream": "cpp",
-        "span": "cpp",
-        "stdexcept": "cpp",
-        "streambuf": "cpp",
-        "text_encoding": "cpp",
-        "typeinfo": "cpp",
-        "variant": "cpp"
-    }
+  "C_Cpp.intelliSenseEngine": "disabled", // 禁用微软自带的 C++ IntelliSense 引擎
+  "C_Cpp.autocomplete": "disabled", // 屏蔽默认 C++ 插件的自动补全
+  "clangd.arguments": [
+    "--compile-commands-dir=.", // 指定 compile_commands.json 的目录为当前工作目录（项目根目录）
+    "--header-insertion=never"  // 禁止 clangd 自动插入 #include 头文件
+  ],
+  "clangd.path": "D:\\clangd llvm install\\LLVM\\bin\\clang.exe",  // 指定 clangd 的路径
+  "files.associations": { // 将 .tcc 和 .ipp 这些扩展名文件视作 C++ 文件处理
+    "*.tcc": "cpp",
+    "*.ipp": "cpp"
+  }
 }
+

@@ -20,7 +20,8 @@ if not exist "%cppfile%" (
 
 REM 编译文件
 echo Compiling %cppfile% ...
-g++ "%cppfile%" -o "%filename%.exe"
+set "GPP=D:\MinGW_install\ucrt64\bin\g++.exe"
+%GPP% -std=c++23 "%cppfile%" -o "%filename%.exe"
 if %errorlevel% neq 0 (
     echo Compile failed!
     pause
@@ -33,6 +34,8 @@ echo Compile success. Running %filename%.exe ...
 echo -------------------------------------
 "%filename%.exe"
 echo -------------------------------------
+REM 自动删除生成的exe文件
+del "%filename%.exe"
 pause
 
 
