@@ -5,7 +5,7 @@
     "--compile-commands-dir=.", // 指定 compile_commands.json 的目录为当前工作目录（项目根目录）
     "--header-insertion=never"  // 禁止 clangd 自动插入 #include 头文件
   ],
-  "clangd.path": "D:\\clangd llvm install\\LLVM\\bin\\clang.exe",  // 指定 clangd 的路径
+  "clangd.path": "D:\\clangd llvm install\\LLVM\\bin\\clangd.exe",  // 指定 clangd 的路径
   "files.associations": { // 将 .tcc 和 .ipp 这些扩展名文件视作 C++ 文件处理
     "*.tcc": "cpp",
     "*.ipp": "cpp"
